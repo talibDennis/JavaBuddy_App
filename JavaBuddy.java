@@ -4,6 +4,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
+import javafx.geometry.Insets;
 import java.util.HashMap;
 import java.util.Map;
 import java.io.FileReader;
