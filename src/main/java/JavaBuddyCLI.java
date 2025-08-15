@@ -1,18 +1,17 @@
 
-import java.util.Map;
-import java.util.Scanner;
+import com.google.gson.Gson;
+import com.google.gson.annotations.SerializedName;
+import java.util.concurrent.atomic.AtomicInteger;
+import com.google.gson.reflect.TypeToken;
 import java.io.FileReader;
 import java.io.IOException;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+import java.lang.reflect.Type;
+import java.util.Map;
+import java.util.Scanner;
 
 public class JavaBuddyCLI {
 
-    private static Map<String, Map<String, String>> glossary;
-
     public static void main(String[] args) {
-        loadGlossary();
-        Scanner scanner = new Scanner(System.in);
         String[] asciiArt = {
             "       __                     ____            __    __",
             "      / /___ __   ______ _   / __ )__  ______/ /___/ /_  __",
@@ -30,39 +29,74 @@ public class JavaBuddyCLI {
                 Thread.currentThread().interrupt();
             }
         }
-        System.out.println("\nWelcome to JavaBuddy CLI! Type a Java term to learn about it (like class or polymorphism), or type 'exit' to quit.");
+        System.out.println("📘 Available Commands:");
+        System.out.println("  - Type any glossary term or library name to learn about it.");
+        System.out.println("  - Type 'exit' to quit the program.");
+        System.out.println("  - Type 'help' for a list of all glossary terms or library names.");
 
-        while (true) {
-            System.out.print("\nEnter a Java term: ");
-            String input = scanner.nextLine().trim().toLowerCase();
+        Gson gson = new Gson();
+        try {// src/main/resources/glossary.json
+            FileReader reader = new FileReader("src/main/resources/glossary.json");
+            Type glossaryType = new TypeToken<Map<String, GlossaryEntry>>() {}.getType();
+            Map<String, GlossaryEntry> glossary = gson.fromJson(reader, glossaryType);
+            reader.close();
 
-            if (input.equals("exit")) {
-                System.out.println("Goodbye!");
-                break;
+            Scanner scanner = new Scanner(System.in);
+            while (true) {
+                System.out.print("\nEnter a term or library: ");
+                String input = scanner.nextLine().trim().toLowerCase();
+                if (input.equals("exit")) {
+                    System.out.println("Goodbye!");
+                    break;
+                }
+                // Help command
+                AtomicInteger tableIndex = new AtomicInteger(0);
+                if (input.equalsIgnoreCase("help")) {
+                    System.out.println("\nGlossary Entries:");
+                    System.out.printf("%-30s | %-30s%n", "Terms", "Libraries");
+                    System.out.println("--------------------------------------------------------------");
+
+                    glossary.entrySet().stream()
+                        .filter(e -> "term".equalsIgnoreCase(e.getValue().type))
+                        .map(Map.Entry::getKey)
+                        .sorted()
+                        .forEachOrdered(term -> {
+                            String lib = glossary.entrySet().stream()
+                                .filter(e -> "library".equalsIgnoreCase(e.getValue().type))
+                                .map(Map.Entry::getKey)
+                                .sorted()
+                                .skip(tableIndex.getAndIncrement())
+                                .findFirst()
+                                .orElse("");
+                            System.out.printf("%-30s | %-30s%n", term, lib);
+                        });
+
+                    // Reset index for next help call
+                    tableIndex.set(0);
+                    continue; // ✅ Now only skips when "help" is typed
+                }
+
+                GlossaryEntry entry = glossary.get(input);
+                if (entry != null) {
+                    System.out.println("Definition: " + entry.definition);
+                    System.out.println("Example: " + entry.example);
+                    System.out.println("Code Example: " + entry.codeExample);
+                    System.out.println("Type: " + entry.type);
+                } else {
+                    System.out.println("Sorry, I couldn't find that term or library.");
+                }
             }
-
-            if (glossary.containsKey(input)) {
-                Map<String, String> entry = glossary.get(input);
-                System.out.println("Definition: " + entry.get("definition"));
-                System.out.println("Example: " + entry.get("example"));
-                System.out.println("Code Example: " + entry.get("code example"));
-            } else {
-                System.out.println("Sorry, that term was not found in the glossary.");
-            }
+            scanner.close();
+        } catch (IOException e) {
+            System.out.println("Error loading glossary: " + e.getMessage());
         }
-
-        scanner.close();
     }
 
-    private static void loadGlossary() {
-        try {
-            Gson gson = new Gson();
-            FileReader reader = new FileReader("src/main/resources/glossary.json");
-            glossary = gson.fromJson(reader, new TypeToken<Map<String, Map<String, String>>>(){}.getType());
-            reader.close();
-        } catch (IOException e) {
-            System.out.println("Failed to load glossary: " + e.getMessage());
-            glossary = Map.of();
-        }
+    static class GlossaryEntry {
+        String definition;
+        String example;
+        @SerializedName("code example")
+        String codeExample;
+        String type;
     }
 }

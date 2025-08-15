@@ -2,126 +2,331 @@
   "class": {
     "definition": "A class is like a blueprint for making something, like a toy. It tells the computer what the toy should look like and what it can do.",
     "example": "For example, a 'Car' class might say that every car has wheels and can drive.",
-    "code example": "public class Car { int speed; void accelerate() { speed += 10; } }"
+    "code example": "public class Car { int speed; void accelerate() { speed += 10; } }",
+    "type": "term"
   },
   "object": {
     "definition": "An object is like a toy made from a blueprint. It's the real thing you can play with.",
     "example": "For example, if you have a 'Car' class, then 'myCar' is an object you can drive.",
-    "code example": "Car myCar = make a new Car();"
+    "code example": "Car myCar = make a new Car();",
+    "type": "term"
   },
   "method": {
     "definition": "A method is like a button on a toy that makes it do something.",
     "example": "For example, a 'drive()' method makes the car go forward.",
-    "code example": "public void drive() { print(\"Driving\"); }"
+    "code example": "public void drive() { print(\"Driving\"); }",
+    "type": "term"
   },
   "constructor": {
     "definition": "A constructor is like the instructions for building a toy when you first open the box.",
     "example": "For example, when you make a new car, the constructor sets its color and speed.",
-    "code example": "public Car() { speed = 0; }"
+    "code example": "public Car() { speed = 0; }",
+    "type": "term"
   },
   "inheritance": {
     "definition": "Inheritance means one toy can get features from another toy.",
     "example": "For example, a 'RaceCar' can inherit from 'Car' and go faster.",
-    "code example": "class SportsCar inherits from Car { }"
+    "code example": "class SportsCar inherits from Car { }",
+    "type": "term"
   },
   "polymorphism": {
     "definition": "Polymorphism is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'polymorphism' was a toy, it would do something fun or have a special feature.",
-    "code example": "Car myCar = make a new SportsCar();"
+    "code example": "Car myCar = make a new SportsCar();",
+    "type": "term"
   },
   "encapsulation": {
     "definition": "Encapsulation is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'encapsulation' was a toy, it would do something fun or have a special feature.",
-    "code example": "private int speed; public void setSpeed(int s) { speed = s; }"
+    "code example": "private int speed; public void setSpeed(int s) { speed = s; }",
+    "type": "term"
   },
   "abstraction": {
     "definition": "Abstraction is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'abstraction' was a toy, it would do something fun or have a special feature.",
-    "code example": "abstract class Animal { abstract void makeSound(); }"
+    "code example": "abstract class Animal { abstract void makeSound(); }",
+    "type": "term"
   },
   "interface": {
     "definition": "An interface is like a promise that a toy will have certain buttons or actions.",
     "example": "For example, if a toy promises to 'play music', it must have a 'playMusic()' button.",
-    "code example": "interface Vehicle { void start(); }"
+    "code example": "interface Vehicle { void start(); }",
+    "type": "term"
   },
   "static": {
     "definition": "Static is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'static' was a toy, it would do something fun or have a special feature.",
-    "code example": "static int count = 0;"
+    "code example": "static int count = 0;",
+    "type": "term"
   },
   "final": {
     "definition": "Final is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'final' was a toy, it would do something fun or have a special feature.",
-    "code example": "final int MAX_SPEED = 120;"
+    "code example": "final int MAX_SPEED = 120;",
+    "type": "term"
   },
   "try-catch": {
     "definition": "Try-catch is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'try-catch' was a toy, it would do something fun or have a special feature.",
-    "code example": "try { int x = 5 / 0; } catch (ArithmeticException e) { print(\"Error\"); }"
+    "code example": "try { int x = 5 / 0; } catch (ArithmeticException e) { print(\"Error\"); }",
+    "type": "term"
   },
   "exception": {
     "definition": "Exception is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'exception' was a toy, it would do something fun or have a special feature.",
-    "code example": "throw make a new IllegalArgumentException(\"Invalid input\");"
+    "code example": "throw make a new IllegalArgumentException(\"Invalid input\");",
+    "type": "term"
   },
   "array": {
     "definition": "Array is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'array' was a toy, it would do something fun or have a special feature.",
-    "code example": "int[] numbers = {1, 2, 3};"
+    "code example": "int[] numbers = {1, 2, 3};",
+    "type": "term"
   },
   "list": {
     "definition": "List is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'list' was a toy, it would do something fun or have a special feature.",
-    "code example": "List<String> names = make a new ArrayList<>();"
+    "code example": "List<String> names = make a new ArrayList<>();",
+    "type": "term"
   },
   "map": {
     "definition": "Map is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'map' was a toy, it would do something fun or have a special feature.",
-    "code example": "Map<String, Integer> scores = make a new HashMap<>();"
+    "code example": "Map<String, Integer> scores = make a new HashMap<>();",
+    "type": "term"
   },
   "loop": {
     "definition": "A loop is like doing something over and over again until you're told to stop.",
     "example": "For example, a loop can make a robot wave its hand 5 times.",
-    "code example": "for (int i = 0; i < 5; i++) { print(i); }"
+    "code example": "for (int i = 0; i < 5; i++) { print(i); }",
+    "type": "term"
   },
   "if-else": {
     "definition": "If-else is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'if-else' was a toy, it would do something fun or have a special feature.",
-    "code example": "if (speed > 60) { print(\"Too fast\"); } else { print(\"Safe\"); }"
+    "code example": "if (speed > 60) { print(\"Too fast\"); } else { print(\"Safe\"); }",
+    "type": "term"
   },
   "switch": {
     "definition": "Switch is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'switch' was a toy, it would do something fun or have a special feature.",
-    "code example": "switch(day) { case \"Monday\": break; default: break; }"
+    "code example": "switch(day) { case \"Monday\": break; default: break; }",
+    "type": "term"
   },
   "enum": {
     "definition": "Enum is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'enum' was a toy, it would do something fun or have a special feature.",
-    "code example": "enum Direction { NORTH, SOUTH, EAST, WEST }"
+    "code example": "enum Direction { NORTH, SOUTH, EAST, WEST }",
+    "type": "term"
   },
   "generics": {
     "definition": "Generics is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'generics' was a toy, it would do something fun or have a special feature.",
-    "code example": "List<String> list = make a new ArrayList<>();"
+    "code example": "List<String> list = make a new ArrayList<>();",
+    "type": "term"
   },
   "lambda": {
     "definition": "Lambda is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'lambda' was a toy, it would do something fun or have a special feature.",
-    "code example": "(a, b) -> a + b"
+    "code example": "(a, b) -> a + b",
+    "type": "term"
   },
   "stream": {
     "definition": "Stream is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'stream' was a toy, it would do something fun or have a special feature.",
-    "code example": "list.stream().filter(s -> s.startsWith(\"A\")).collect(Collectors.toList());"
+    "code example": "list.stream().filter(s -> s.startsWith(\"A\")).collect(Collectors.toList());",
+    "type": "term"
   },
   "thread": {
     "definition": "Thread is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'thread' was a toy, it would do something fun or have a special feature.",
-    "code example": "Thread t = make a new Thread(() -> print(\"Running\")); t.start();"
+    "code example": "Thread t = make a new Thread(() -> print(\"Running\")); t.start();",
+    "type": "term"
   },
   "synchronization": {
     "definition": "Synchronization is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
     "example": "For example, if 'synchronization' was a toy, it would do something fun or have a special feature.",
-    "code example": "synchronized void increment() { count++; }"
+    "code example": "synchronized void increment() { count++; }",
+    "type": "term"
+  },
+  "junit": {
+    "definition": "JUnit helps you test your Java code to make sure it works like you expect.",
+    "example": "You can write a test to check if your calculator adds numbers correctly.",
+    "code example": "@Test public void testAdd() { assertEquals(4, calculator.add(2, 2)); }",
+    "type": "library"
+  },
+  "log4j": {
+    "definition": "Log4j lets your program write messages to a log so you can see what it's doing.",
+    "example": "You can log a message when your app starts or when something goes wrong.",
+    "code example": "logger.info(\"App started successfully.\");",
+    "type": "library"
+  },
+  "gson": {
+    "definition": "Gson helps you turn Java objects into JSON and JSON back into Java objects.",
+    "example": "You can use Gson to read data from a web API and use it in your app.",
+    "code example": "Gson gson = new Gson(); String json = gson.toJson(myObject);",
+    "type": "library"
+  },
+  "jackson": {
+    "definition": "Jackson is another tool for working with JSON in Java.",
+    "example": "You can use Jackson to read and write JSON files easily.",
+    "code example": "ObjectMapper mapper = new ObjectMapper(); mapper.writeValue(file, obj);",
+    "type": "library"
+  },
+  "hibernate": {
+    "definition": "Hibernate helps you save Java objects into a database without writing SQL.",
+    "example": "You can use Hibernate to store a list of users in a database.",
+    "code example": "session.save(user);",
+    "type": "library"
+  },
+  "spring": {
+    "definition": "Spring helps you build big Java applications with lots of parts working together.",
+    "example": "You can use Spring to create a web app with login and signup features.",
+    "code example": "@SpringBootApplication public class MyApp { public static void main(String[] args) { SpringApplication.run(MyApp.class, args); } }",
+    "type": "library"
+  },
+  "spring-boot": {
+    "definition": "Spring Boot makes it easy to start a Spring app quickly with less setup.",
+    "example": "You can create a working web app with just a few lines of code.",
+    "code example": "@SpringBootApplication public class App { public static void main(String[] args) { SpringApplication.run(App.class, args); } }",
+    "type": "library"
+  },
+  "javafx": {
+    "definition": "JavaFX helps you build desktop apps with buttons, windows, and animations.",
+    "example": "You can make a calculator app with a nice user interface.",
+    "code example": "Button btn = new Button(\"Click Me\"); btn.setOnAction(e -> System.out.println(\"Clicked!\"));",
+    "type": "library"
+  },
+  "apache-poi": {
+    "definition": "Apache POI lets you read and write Microsoft Excel and Word files in Java.",
+    "example": "You can create an Excel report from your Java program.",
+    "code example": "Workbook wb = new XSSFWorkbook(); Sheet sheet = wb.createSheet(\"Report\");",
+    "type": "library"
+  },
+  "commons-lang3": {
+    "definition": "Commons Lang3 gives you extra tools for working with strings, numbers, and more.",
+    "example": "You can use it to check if a string is empty or reverse it.",
+    "code example": "StringUtils.reverse(\"hello\");",
+    "type": "library"
+  },
+  "okhttp": {
+    "definition": "OkHttp helps your app talk to websites and APIs over the internet.",
+    "example": "You can use it to download data from a server.",
+    "code example": "OkHttpClient client = new OkHttpClient(); Request request = new Request.Builder().url(\"https://example.com\").build();",
+    "type": "library"
+  },
+  "retrofit": {
+    "definition": "Retrofit makes it easy to call web APIs and get data back as Java objects.",
+    "example": "You can use it to get weather info from an online service.",
+    "code example": "Retrofit retrofit = new Retrofit.Builder().baseUrl(\"https://api.example.com\").build();",
+    "type": "library"
+  },
+  "lombok": {
+    "definition": "Lombok helps you write less code by automatically creating getters, setters, and more.",
+    "example": "You can use @Getter to avoid writing getter methods yourself.",
+    "code example": "@Getter @Setter public class User { private String name; }",
+    "type": "library"
+  },
+  "guava": {
+    "definition": "Guava gives you extra tools for working with collections, caching, and more.",
+    "example": "You can use it to create a list with default values.",
+    "code example": "List<String> names = Lists.newArrayList(\"Alice\", \"Bob\");",
+    "type": "library"
+  },
+  "slf4j": {
+    "definition": "SLF4J is a logging tool that works with different logging systems.",
+    "example": "You can write logs that work with Log4j or other tools.",
+    "code example": "Logger logger = LoggerFactory.getLogger(MyClass.class);",
+    "type": "library"
+  },
+  "jfreechart": {
+    "definition": "JFreeChart helps you make charts like bar graphs and pie charts in Java.",
+    "example": "You can show your data in a colorful chart.",
+    "code example": "JFreeChart chart = ChartFactory.createPieChart(\"My Chart\", dataset);",
+    "type": "library"
+  },
+  "jsoup": {
+    "definition": "Jsoup helps you read and change HTML pages in Java.",
+    "example": "You can use it to get headlines from a news website.",
+    "code example": "Document doc = Jsoup.connect(\"https://example.com\").get();",
+    "type": "library"
+  },
+  "jdom": {
+    "definition": "JDOM helps you work with XML files in Java.",
+    "example": "You can read and write XML data easily.",
+    "code example": "Document doc = new SAXBuilder().build(new File(\"data.xml\"));",
+    "type": "library"
+  },
+  "rxjava": {
+    "definition": "RxJava helps you handle data that changes over time, like user input or network calls.",
+    "example": "You can react to events as they happen.",
+    "code example": "Observable<String> names = Observable.just(\"Alice\", \"Bob\");",
+    "type": "library"
+  },
+  "spark": {
+    "definition": "Spark is a tiny web framework for building web apps in Java.",
+    "example": "You can make a simple website with just a few lines.",
+    "code example": "get(\"/hello\", (req, res) -> \"Hello World\");",
+    "type": "library"
+  },
+  "vertx": {
+    "definition": "Vert.x helps you build fast and scalable web apps.",
+    "example": "You can handle lots of users at once with Vert.x.",
+    "code example": "vertx.createHttpServer().requestHandler(req -> req.response().end(\"Hi!\")).listen(8080);",
+    "type": "library"
+  },
+  "micronaut": {
+    "definition": "Micronaut is a modern framework for building fast Java apps.",
+    "example": "You can make a microservice with very little setup.",
+    "code example": "@Controller(\"/hello\") public class HelloController { @Get public String hello() { return \"Hi!\"; } }",
+    "type": "library"
+  },
+  "quarkus": {
+    "definition": "Quarkus helps you build Java apps that start fast and use less memory.",
+    "example": "You can make cloud-ready apps with Quarkus.",
+    "code example": "@Path(\"/hello\") public class HelloResource { @GET public String hello() { return \"Hello\"; } }",
+    "type": "library"
+  },
+  "dropwizard": {
+    "definition": "Dropwizard helps you build REST APIs quickly and easily.",
+    "example": "You can make a web service with built-in tools.",
+    "code example": "public class HelloWorldApplication extends Application<Configuration> { }",
+    "type": "library"
+  },
+  "jooq": {
+    "definition": "jOOQ lets you write SQL in Java in a safe and easy way.",
+    "example": "You can build queries without writing raw SQL.",
+    "code example": "DSLContext create = DSL.using(SQLDialect.MYSQL);",
+    "type": "library"
+  },
+  "mapstruct": {
+    "definition": "MapStruct helps you copy data from one object to another.",
+    "example": "You can turn a User object into a UserDTO.",
+    "code example": "@Mapper public interface UserMapper { UserDTO toDto(User user); }",
+    "type": "library"
+  },
+  "modelmapper": {
+    "definition": "ModelMapper also helps you map one object to another easily.",
+    "example": "You can copy fields from a source to a destination object.",
+    "code example": "ModelMapper mapper = new ModelMapper(); UserDTO dto = mapper.map(user, UserDTO.class);",
+    "type": "library"
+  },
+  "tika": {
+    "definition": "Apache Tika helps you detect and extract text from files like PDFs and Word docs.",
+    "example": "You can read the contents of a document file.",
+    "code example": "String text = new Tika().parseToString(new File(\"doc.pdf\"));",
+    "type": "library"
+  },
+  "pdfbox": {
+    "definition": "PDFBox helps you read and write PDF files in Java.",
+    "example": "You can create a PDF report from your app.",
+    "code example": "PDDocument doc = new PDDocument(); doc.save(\"report.pdf\");",
+    "type": "library"
+  },
+  "itext": {
+    "definition": "iText is another tool for working with PDF files in Java.",
+    "example": "You can add text and images to a PDF.",
+    "code example": "PdfWriter writer = new PdfWriter(\"file.pdf\");",
+    "type": "library"
   }
 }
