@@ -1,0 +1,127 @@
+{
+  "class": {
+    "definition": "A class is like a blueprint for making something, like a toy. It tells the computer what the toy should look like and what it can do.",
+    "example": "For example, a 'Car' class might say that every car has wheels and can drive.",
+    "code example": "public class Car { int speed; void accelerate() { speed += 10; } }"
+  },
+  "object": {
+    "definition": "An object is like a toy made from a blueprint. It's the real thing you can play with.",
+    "example": "For example, if you have a 'Car' class, then 'myCar' is an object you can drive.",
+    "code example": "Car myCar = make a new Car();"
+  },
+  "method": {
+    "definition": "A method is like a button on a toy that makes it do something.",
+    "example": "For example, a 'drive()' method makes the car go forward.",
+    "code example": "public void drive() { print(\"Driving\"); }"
+  },
+  "constructor": {
+    "definition": "A constructor is like the instructions for building a toy when you first open the box.",
+    "example": "For example, when you make a new car, the constructor sets its color and speed.",
+    "code example": "public Car() { speed = 0; }"
+  },
+  "inheritance": {
+    "definition": "Inheritance means one toy can get features from another toy.",
+    "example": "For example, a 'RaceCar' can inherit from 'Car' and go faster.",
+    "code example": "class SportsCar inherits from Car { }"
+  },
+  "polymorphism": {
+    "definition": "Polymorphism is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'polymorphism' was a toy, it would do something fun or have a special feature.",
+    "code example": "Car myCar = make a new SportsCar();"
+  },
+  "encapsulation": {
+    "definition": "Encapsulation is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'encapsulation' was a toy, it would do something fun or have a special feature.",
+    "code example": "private int speed; public void setSpeed(int s) { speed = s; }"
+  },
+  "abstraction": {
+    "definition": "Abstraction is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'abstraction' was a toy, it would do something fun or have a special feature.",
+    "code example": "abstract class Animal { abstract void makeSound(); }"
+  },
+  "interface": {
+    "definition": "An interface is like a promise that a toy will have certain buttons or actions.",
+    "example": "For example, if a toy promises to 'play music', it must have a 'playMusic()' button.",
+    "code example": "interface Vehicle { void start(); }"
+  },
+  "static": {
+    "definition": "Static is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'static' was a toy, it would do something fun or have a special feature.",
+    "code example": "static int count = 0;"
+  },
+  "final": {
+    "definition": "Final is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'final' was a toy, it would do something fun or have a special feature.",
+    "code example": "final int MAX_SPEED = 120;"
+  },
+  "try-catch": {
+    "definition": "Try-catch is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'try-catch' was a toy, it would do something fun or have a special feature.",
+    "code example": "try { int x = 5 / 0; } catch (ArithmeticException e) { print(\"Error\"); }"
+  },
+  "exception": {
+    "definition": "Exception is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'exception' was a toy, it would do something fun or have a special feature.",
+    "code example": "throw make a new IllegalArgumentException(\"Invalid input\");"
+  },
+  "array": {
+    "definition": "Array is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'array' was a toy, it would do something fun or have a special feature.",
+    "code example": "int[] numbers = {1, 2, 3};"
+  },
+  "list": {
+    "definition": "List is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'list' was a toy, it would do something fun or have a special feature.",
+    "code example": "List<String> names = make a new ArrayList<>();"
+  },
+  "map": {
+    "definition": "Map is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'map' was a toy, it would do something fun or have a special feature.",
+    "code example": "Map<String, Integer> scores = make a new HashMap<>();"
+  },
+  "loop": {
+    "definition": "A loop is like doing something over and over again until you're told to stop.",
+    "example": "For example, a loop can make a robot wave its hand 5 times.",
+    "code example": "for (int i = 0; i < 5; i++) { print(i); }"
+  },
+  "if-else": {
+    "definition": "If-else is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'if-else' was a toy, it would do something fun or have a special feature.",
+    "code example": "if (speed > 60) { print(\"Too fast\"); } else { print(\"Safe\"); }"
+  },
+  "switch": {
+    "definition": "Switch is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'switch' was a toy, it would do something fun or have a special feature.",
+    "code example": "switch(day) { case \"Monday\": break; default: break; }"
+  },
+  "enum": {
+    "definition": "Enum is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'enum' was a toy, it would do something fun or have a special feature.",
+    "code example": "enum Direction { NORTH, SOUTH, EAST, WEST }"
+  },
+  "generics": {
+    "definition": "Generics is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'generics' was a toy, it would do something fun or have a special feature.",
+    "code example": "List<String> list = make a new ArrayList<>();"
+  },
+  "lambda": {
+    "definition": "Lambda is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'lambda' was a toy, it would do something fun or have a special feature.",
+    "code example": "(a, b) -> a + b"
+  },
+  "stream": {
+    "definition": "Stream is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'stream' was a toy, it would do something fun or have a special feature.",
+    "code example": "list.stream().filter(s -> s.startsWith(\"A\")).collect(Collectors.toList());"
+  },
+  "thread": {
+    "definition": "Thread is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'thread' was a toy, it would do something fun or have a special feature.",
+    "code example": "Thread t = make a new Thread(() -> print(\"Running\")); t.start();"
+  },
+  "synchronization": {
+    "definition": "Synchronization is like something you use or see in real life. It's a way to help the computer understand what you're talking about.",
+    "example": "For example, if 'synchronization' was a toy, it would do something fun or have a special feature.",
+    "code example": "synchronized void increment() { count++; }"
+  }
+}
