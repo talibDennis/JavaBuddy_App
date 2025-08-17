@@ -1,0 +1,65 @@
+Show me how to search by type in this format.
+What features can I add next?
+Can you show me a few examples of the new libraries?
+Can you show me how to add a custom icon?
+Can you help with packaging my app?
+How to set the icon in Java?
+Can you help with creating a DMG for it?
+How to create a .app from JavaBuddyCLI?
+
+861864001044350
+
+
+Can we add a help feature that list all library & term entries and commands like exit?
+
+
+while (true) {
+    System.out.print("\nEnter a term or library: ");
+    String input = scanner.nextLine().trim().toLowerCase();
+
+    if (input.equals("exit")) {
+        System.out.println("Goodbye!");
+        break;
+    } else if (input.equals("help")) {
+        // Help logic here
+    } else {
+        GlossaryEntry entry = glossary.get(input);
+        if (entry != null) {
+            System.out.println("Definition: " + entry.definition);
+            System.out.println("Example: " + entry.example);
+            System.out.println("Code Example: " + entry.codeExample);
+            System.out.println("Type: " + entry.type);
+        } else {
+            System.out.println("Sorry, I couldn't find that term or library.");
+        }
+    }
+}
+
+
+else if (input.equals("help")) {
+    System.out.println("\nAvailable Commands:");
+    System.out.println("  help  - Show this help message");
+    System.out.println("  exit  - Exit the program");
+
+    System.out.println("\nGlossary Entries:");
+    System.out.printf("%-30s | %-30s%n", "Terms", "Libraries");
+    System.out.println("--------------------------------------------------------------");
+
+    glossary.entrySet().stream()
+        .filter(e -> "term".equalsIgnoreCase(e.getValue().type))
+        .map(Map.Entry::getKey)
+        .sorted()
+        .forEachOrdered(term -> {
+            String lib = glossary.entrySet().stream()
+                .filter(e -> "library".equalsIgnoreCase(e.getValue().type))
+                .map(Map.Entry::getKey)
+                .sorted()
+                .skip(tableIndex.getAndIncrement())
+                .findFirst()
+                .orElse("");
+            System.out.printf("%-30s | %-30s%n", term, lib);
+        });
+
+    // Reset index for next help call
+    tableIndex.set(0);
+}
