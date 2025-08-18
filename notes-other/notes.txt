@@ -6,6 +6,7 @@ Can you help with packaging my app?
 How to set the icon in Java?
 Can you help with creating a DMG for it?
 How to create a .app from JavaBuddyCLI?
+Can you help me review my Info.plist file?
 
 861864001044350
 

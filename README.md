@@ -1,25 +1,23 @@
 # JavaBuddyCLI
 
-JavaBuddyCLI is a helpful Java desktop application designed to assist users in learning Java by explaining terms, methods, and libraries with examples. It features a friendly interface and a custom icon to enhance the user experience.
+JavaBuddyCLI is a helpful Java Command Line application designed to assist users in learning Java by explaining terms, methods, and libraries with examples. It features a friendly interface and a custom icon to enhance the user experience.
 
-## Features
+# Features
 - Interactive Java learning assistant
-- Explains Java concepts with examples
-- Lightweight desktop interface
+- Explains Java concepts with examples & sample code
 - Custom icon branding (JavaBuddy)
 
-## Installation
+# Installation
 
-### 1. Compile and Package
-javac JavaBuddyCLI.java
-jar cfm JavaBuddyCLI.jar manifest.txt JavaBuddyCLI.class resources/
+## 1. Compile and Package
+javac -cp gson-2.10.1.jar -d out src/main/java/JavaBuddyCLI.java 
+java -cp gson-2.10.1.jar:out JavaBuddyCLI
 
 # Requirements
 - Java JDK 8 or higher
-- macOS (for DMG creation)
 - Terminal access
 - License
 
 # MIT License
 
-Made with ☕ Lucy & by Joseph Dennis
+Made by ☕ Lucy😉 & Joseph Dennis
