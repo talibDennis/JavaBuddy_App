@@ -1,1 +1,0 @@
-Main-Class: JavaBuddy_App
