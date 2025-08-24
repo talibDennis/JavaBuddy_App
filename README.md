@@ -22,6 +22,10 @@ java -cp gson-2.10.1.jar:out JavaBuddyCLI
 
 # Status
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/talibDennis/JavaBuddy_App)
+![GitHub repo size](https://img.shields.io/github/repo-size/talibDennis/JavaBuddy_App)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/talibDennis/JavaBuddy_App)
+![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/talibDennis/JavaBuddy_App)
+![GitHub top language](https://img.shields.io/github/languages/top/talibDennis/JavaBuddy_App)
 
 # MIT License
 
