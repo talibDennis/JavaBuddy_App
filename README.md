@@ -20,6 +20,9 @@ java -cp gson-2.10.1.jar:out JavaBuddyCLI
 - Terminal access
 - License
 
+# Status
+![GitHub package.json version](https://img.shields.io/github/package-json/v/talibDennis/JavaBuddy_App)
+
 # MIT License
 
 Made by ☕ Lucy😉 & Joseph Dennis
