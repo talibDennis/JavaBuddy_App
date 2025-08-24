@@ -2,6 +2,9 @@
 ## Overview
 JavaBuddyCLI is a helpful Java Command Line application designed to assist students in learning Java by explaining terms, methods, and libraries in very simple terms easy enough for a child to understand. It features a friendly interface and a custom icon to enhance the user experience. With example explanation and code samples to show the user how the term, method, or library would in java itself I believe to program would be a most welcomed companion to anybody wanting to learn Java.
 
+# 🚀 Why JavaBuddyCLI?
+Whether you're just starting out or need a quick refresher, JavaBuddyCLI is your go-to companion for understanding Java in a fun and approachable way.
+
 # ✨ Features
 - 🧠 Plain Language Explanations – Complex Java concepts broken down into simple terms.
 - 💡 Code Examples – See how each term, method, or library is used in real Java code.
