@@ -20,6 +20,20 @@ javac -cp gson-2.10.1.jar -d out src/main/java/JavaBuddyCLI.java
 ## Run
 java -cp gson-2.10.1.jar:out JavaBuddyCLI
 
+# 📁 Project Structure
+```java
+/*
+JavaBuddyCLI.app/
+├── Contents/
+│   ├── MacOS/
+│   │   └── JavaBuddyLauncher  ← Shell script to compile and run the app
+│   ├── Resources/
+│   │   ├── JavaBuddyCLI.java  ← Your Java source file
+│   │   └── glossary.json      ← Glossary data
+│   └── Info.plist             ← macOS app metadata
+/*
+```
+
 # Requirements
 - Java JDK 8 or higher
 - Terminal access
